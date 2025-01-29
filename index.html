@@ -6,6 +6,11 @@
     <!-- Tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Tea House</title>
+    <link rel="icon" type="image/x-icon" href="/images/ponybucks.png">
+    <!-- Manrope font cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- font awsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
@@ -19,9 +24,18 @@
           }
         }
       </script>
+      <style>
+        .manrope-font {
+        font-family: "Manrope", serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+}
+
+      </style>
   </head>
-  <body class="max-w-screen-xl mx-auto px-5">
-    <header class="md:flex justify-between pt-18">
+  <body class="max-w-screen-xl mx-auto px-5 manrope-font">
+    <header class="md:flex justify-between pt-18 mb-8 lg:mb-26">
         <div>
             <h1 class="md:text-7xl text-5xl font-extrabold lg:leading-[90px] leading-[60px]">It's good <br>
                tea time at The <br> Tea House</h1> 
@@ -45,5 +59,45 @@
            </div>
         </div>
     </header>
+    <main>
+      <!-- Featured Products section -->
+       <section class="mb-15 md:mb-28">
+        <div class="text-center mb-5 md:mb-10">
+          <h2 class="font-bold text-xl lg:text-3xl  mb-3 md:mb-6">Our Featured Products</h2>
+          <p class="w-3/4 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+        <!-- card -->
+         <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+          <div class="bg-gradient-to-b from-gray-100 to-slate-100 rounded-xl p-5">
+            <img class="mx-auto pt-3" src="images/tea-1.png" alt="">
+            <div class="text-center pt-3">
+              <h2 class="text-2xl font-extrabold mb-2">Milk Tea</h2>
+              <p class="text-gray-500 font-semibold">Creamer could be replaced <br>by fresh milk</p>
+            </div>
+          </div>
+          <div class="bg-gradient-to-b from-gray-100 to-slate-100 rounded-xl p-5">
+            <img class="mx-auto pt-3" src="images/tea-2.png" alt="">
+            <div class="text-center pt-3">
+              <h2 class="text-2xl font-extrabold mb-2">Black Tea</h2>
+              <p class="text-gray-500 font-semibold">Creamer could be replaced <br>by fresh milk</p>
+            </div>
+          </div>
+          <div class="bg-gradient-to-b from-gray-100 to-slate-100 rounded-xl p-5">
+            <img class="mx-auto pt-3" src="images/tea-3.png" alt="">
+            <div class="text-center pt-3">
+              <h2 class="text-2xl font-extrabold mb-2">Lemon Tea</h2>
+              <p class="text-gray-500 font-semibold">Creamer could be replaced <br>by fresh milk</p>
+            </div>
+          </div>
+          <div class="bg-gradient-to-b from-gray-100 to-slate-100 rounded-xl p-5">
+            <img class="mx-auto pt-3" src="images/tea-4.png" alt="">
+            <div class="text-center pt-3">
+              <h2 class="text-2xl font-extrabold mb-2">Green Tea</h2>
+              <p class="text-gray-500 font-semibold">Creamer could be replaced <br>by fresh milk</p>
+            </div>
+          </div>
+         </div>
+       </section>
+    </main>
   </body>
 </html>
