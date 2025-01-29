@@ -34,6 +34,25 @@
       </style>
   </head>
   <body class="max-w-screen-xl mx-auto px-5 manrope-font">
+    <nav class="grid grid-cols-3  items-center">
+      <div class="justify-self-start">
+        <img class="max-w-3/4" src="images/logo.png" alt="">
+      </div>
+      <div class="justify-self-end">
+        <ul class="flex gap-5 items-center">
+          <li><a class="font-bold text-xl uppercase" href="">Home</a></li>
+          <li><a class="font-bold text-xl uppercase" href="">About</a></li>
+          <li><a class="font-bold text-xl uppercase" href="">Survice</a></li>
+          <li><a class="font-bold text-xl uppercase" href="">Delivary</a></li>
+        </ul>
+      </div>
+      <div class="justify-self-end">
+        <button class="flex gap-1 py-3 px-6 uppercase bg-gradient-to-r from-[#FF8938] to-[#FF0000] rounded-xl text-white font-semibold items-center">Log in
+          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+        </svg>
+        </button>
+      </div>
+    </nav>
     <header class="md:flex justify-between pt-18 mb-8 lg:mb-26">
         <div>
             <h1 class="md:text-7xl text-5xl font-extrabold lg:leading-[90px] leading-[60px]">It's good <br>
@@ -47,7 +66,7 @@
         <div class="relative">
           <img class="drop-shadow-lg" src="images/banner.png" alt="">
           <!-- card -->
-           <div class="flex items-center  gap-4 py-4 px-3 ps-7 rounded-lg drop-shadow-md bg-white w-70 absolute top-100 right-80">
+           <div class="flex items-center  gap-4 py-4 px-3 ps-7 rounded-lg drop-shadow-md bg-white w-70 absolute bottom-0 right-1/2 translate-x-1/2 lg:translate-x-3/5">
              <div class="text-4xl">
               <i class="fa-solid fa-star text-amber-300"></i>
              </div>
@@ -125,7 +144,7 @@
             </div>
         </section>
         <!-- Meet our Super Clients section -->
-         <section class="grid md:grid-cols-2 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-13 items-center gap-15">
+         <section class="grid md:grid-cols-2 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#FF0000] p-13 items-center gap-15 lg:mb-20 mb-">
           <!-- Client Info side -->
            <div>
               <h1 class="text-5xl font-extrabold mb-5 text-white md:leading-[61px]">Meet Our Super Clients</h1>
@@ -134,7 +153,7 @@
            </div>
            <!-- Client Card -->
             <div class="relative">
-              <div class="absolute h-52 w-full md:w-3/4 rounded-lg bg-white z-10 top-30 md:top-33 ">
+              <div class="absolute min-h-52 md:w-3/4 rounded-lg bg-white z-10 top-30 md:top-33 ">
                 <div class="absolute bg-white rounded-full -top-5 -left-5 ">
                   <img class="p-1" src="images/client.png" alt="">
                 </div>
@@ -148,7 +167,7 @@
                 </div>
               </div>
               <!-- top card -->
-              <div class="relative left-4 md:left-20  h-52 w-full md:w-3/4 rounded-lg bg-white opacity-40 ">
+              <div class="relative left-4 md:left-20  min-h-52 md:w-3/4 rounded-lg bg-white opacity-40 ">
                 <div class="absolute bg-white rounded-full -top-5 -left-5 ">
                   <img class="p-1" src="images/client.png" alt="">
                 </div>
@@ -162,7 +181,7 @@
                 </div>
               </div>
               <!-- bottom card -->
-              <div class="relative left-4 lg:left-20 h-52 w-full md:w-3/4 lg:mb-10 rounded-lg bg-white top-10 opacity-40">
+              <div class="relative left-4 lg:left-20 min-h-52 w-full md:w-3/4 lg:mb-10 rounded-lg bg-white top-10 opacity-40">
                 <div class="absolute bg-white rounded-full -top-5 -left-5 ">
                   <img class="p-1" src="images/client.png" alt="">
                 </div>
@@ -177,6 +196,36 @@
               </div>
             </div>
          </section>
+         <!-- news section -->
+          <section>
+            <div class="text-center">
+              <h1 class="text-5xl font-extrabold mb-5">News & Events</h1>
+              <p class="text-gray-500 leading-7 lg:mb-12">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            </div>
+            <div class="grid lg:grid-cols-3 gap-6">
+              <div class="p-5 rounded-xl border-1 mx-auto">
+                <img class="rounded-xl mb-5 w-full" src="images/news-1.png" alt="">
+                <p class="text-gray-500 mb-4">Feb 05, 2027</p>
+                <h3 class="leading-7 font-extrabold text-xl mb-3">Collecting 8 points for discount</h3>
+                <p class="leading-8 text-gray-500 mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                <p class="font-bold">Learn More</p>
+              </div>
+              <div class="p-5 rounded-xl border-1 mx-auto">
+                <img class="rounded-xl mb-5 w-full" src="images/news-2.png" alt="">
+                <p class="text-gray-500 mb-4">Feb 05, 2027</p>
+                <h3 class="leading-7 font-extrabold text-xl mb-3">Collecting 8 points for discount</h3>
+                <p class="leading-8 text-gray-500 mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                <p class="font-bold">Learn More</p>
+              </div>
+              <div class="p-5 rounded-xl border-1 mx-auto">
+                <img class="rounded-xl mb-5 w-full" src="images/news-3.png" alt="">
+                <p class="text-gray-500 mb-4">Feb 05, 2027</p>
+                <h3 class="leading-7 font-extrabold text-xl mb-3">Collecting 8 points for discount</h3>
+                <p class="leading-8 text-gray-500 mb-3">There are many variations of passages of Lorem Ipsum available.</p>
+                <p class="font-bold">Learn More</p>
+              </div>
+            </div>
+          </section>
     </main>
   </body>
 </html>
